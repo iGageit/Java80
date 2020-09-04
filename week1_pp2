@@ -1,0 +1,43 @@
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+
+/**
+ *
+ */
+public class Week1_PP2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        
+        
+        //Input
+        System.out.print("Cost of Buidling: ");
+        double building = 0.0;
+        building = scan.nextDouble();
+        
+        // process
+        double cost = buildingcost(building);
+        
+        
+        
+        //output
+        DecimalFormat fmt = new DecimalFormat("0.0");
+        System.out.println("The recommended incurance is $" + fmt.format(cost));
+        
+        
+ 
+    }
+    
+    public static double buildingcost( double building)
+    {
+       double  cost = (building * 80) * .01; 
+       return cost; 
+    }
+    
+}
