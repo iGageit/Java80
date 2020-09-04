@@ -27,8 +27,15 @@ public class Week1_PP2 {
         
         
         //output
-        DecimalFormat fmt = new DecimalFormat("0.0");
-        System.out.println("The recommended incurance is $" + fmt.format(cost));
+        
+        /* added  DecimalFormat fmt = new DecimalFormat("$#,##0"); // This is cool! 
+        System.out.println("The recommended incurance is " + fmt.format(cost));
+
+to make the $ appear and add commas every third number. 
+
+*/
+         DecimalFormat fmt = new DecimalFormat("$#,##0"); // This is cool! 
+        System.out.println("The recommended incurance is " + fmt.format(cost));
         
         
  
